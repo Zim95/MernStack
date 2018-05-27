@@ -1,0 +1,38 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "MERN Stack development",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js --ignore public/",
+    "dev":
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zim95/MernStack.git"
+  },
+  "author": "Namah",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Zim95/MernStack/issues"
+  },
+  "homepage": "https://github.com/Zim95/MernStack#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.8",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "nodemon": "^1.17.5",
+    "webpack": "^4.9.1"
+  }
+}

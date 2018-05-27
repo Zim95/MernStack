@@ -1,0 +1,36 @@
+Installing dependencies
+1) npm init -> to create package.json
+2) npm install --save express OR npm install -s express OR npm i -S express -> add express to dependency in package.json
+3) npm install --save mongodb OR npm install -s mongodb OR npm i -S mongodb -> add mongodb to dependency in package.json
+4) npm install --save express OR npm install -s express OR npm i -S express -> add express to dependency in package.json
+5) npm install --save react react-dom OR npm install -s react react-dom OR npm i -S react react-dom -> add react and react-dom to dependency in package.json
+
+Now installing dev dependencies
+6) npm install --save-dev webpack -> adding webpack, bundling tool
+7) npm install -D babel-cli babel-loader babel-preset-es2015 babel-preset-stage-2 babel-preset-react -> adding babel to dev dependencies
+8) npm i -D nodemon -> installing nodemon
+9) npm i -D eslint eslint-plugin-react babel-eslint -> VVVVVI
+
+Create directory structure
+10) src - javascript frontend modular code
+11) public - static content like js,html and css
+12) api - backend api server
+13) root - server.js
+
+Create empty files
+13) index.js file in api and src
+14) inidex.html in public
+
+Adding shell scripts to package.json
+15) "start": "node server.js" -> running the code. But what we need is:- "nodemon --exec babel-node server.js --ignore public/" -> start server with nodemon and to use es6 we use babel-node and we also ignore the public directory.
+16) "dev":"webpack -wd" -> transforming src files into a bundled file. -wd -> watch mode and development mode
+
+Adding webpackk config
+17)root - webpack.config.js.
+18) Define - entry as ./src/index.js, output path as public and output filename as bundle.js.
+    In loaders, for every file that ends with .js we will run the babel-loader that will transform non standard js to es2015.
+
+To configure babel to work with our presets, create a .babelrc file in the root
+19) .babelrc -> presets:[react,es2015,stage-2]
+
+20) Finally create a .eslintrc config file, copy code from github
